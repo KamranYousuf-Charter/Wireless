@@ -2,44 +2,79 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My First Webpage</title>
-</head>
-<body>
-  <h1>5G</h1>
-  <p>MIMO.</p>
- 
-</body>
-</html>
-
-
-<head>
-  <title>My Webpage</title>
+  <title>My Simple Page</title>
   <style>
     body {
-      background-color: #f5f5f5;
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 30px;
+      margin: 0;
+      background-color: #f4f4f4;
     }
-    h1 {
-      color: navy;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: darkcyan;
+
+    header {
+      background-color: #007acc;
       color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+      padding: 20px;
+      text-align: center;
     }
-    button:hover {
-      background-color: teal;
+
+    nav {
+      background-color: #eaeaea;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px;
+      background: white;
+      max-width: 800px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
     }
   </style>
 </head>
+<body>
 
-Numerology refers to a physical waveform characteristics in terms of subcarrier spacing and corresponding time domain length. We can describe Numerology in a few different perspective as follows.
-Subcarrier Spacing: In 5G NR, the subcarrier spacing can vary from 15 kHz to 960 kHz as of release 17. The larger subcarrier spacings allow for lower latency and support higher-frequency bands, while smaller spacings are suitable for lower-frequency bands and increased coverage.
-Symbol Duration: The symbol duration in 5G NR is inversely proportional to the subcarrier spacing. A larger subcarrier spacing results in a shorter symbol duration, enabling faster data transmission and lower latency.
-Scalable Numerology: The flexibility in 5G numerology allows for the system to adapt to different deployment scenarios, frequency bands, and use cases, ranging from low-bandwidth, wide-area coverage to high-bandwidth, low-latency applications.
-5G numerology provides the foundation for the flexible and adaptive nature of 5G NR, enabling it to support a wide range of use cases and deployment scenarios
+  <header>
+    <h1>Welcome to My Page</h1>
+    <p>Clean and Simple Design</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <main>
+    <h2>About This Page</h2>
+    <p>This is a simple, responsive web page using only HTML and CSS. You can easily modify it for your own needs.</p>
+  </main>
+
+  <footer>
+    &copy; 2025 MySite. All rights reserved.
+  </footer>
+
+</body>
+</html>
